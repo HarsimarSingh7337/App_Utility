@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/statsContainer"
+    android:padding="@dimen/_16sdp"
+    tools:context=".Memory_Storage_Usage">
+
+        <TextView
+            android:id="@+id/label_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Internal Storage usage"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"/>
+
+        <TableLayout
+            android:id="@+id/storageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="0dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/label_storage">
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/total_storage_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Total : "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/total_storage_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/used_storage_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Used : "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/used_storage_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/available_storage_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Available : "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/available_storage_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+        </TableLayout>
+
+    <TextView
+        android:id="@+id/progress_percentage_storage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_below="@id/storageContainer"
+        android:layout_alignParentEnd="true"/>
+
+        <ProgressBar
+            android:id="@+id/progress_bar_storage_usage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@id/progress_percentage_storage"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+
+        <TextView
+            android:id="@+id/label_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ram usage"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/progress_bar_storage_usage"/>
+
+        <TableLayout
+            android:id="@+id/memoryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="0dp"
+            android:layout_below="@id/label_memory"
+            android:layout_alignParentStart="true">
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/total_memory_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Total : "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/total_memory_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/used_memory_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Used : "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/used_memory_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+            <TableRow android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/available_memory_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:text="Available : "
+                    android:textColor="@android:color/black"/>
+
+                <TextView
+                    android:id="@+id/available_memory_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"/>
+            </TableRow>
+
+        </TableLayout>
+
+    <TextView
+        android:id="@+id/progress_percentage_memory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_below="@id/memoryContainer"
+        android:layout_alignParentEnd="true"/>
+
+    <ProgressBar
+            android:id="@+id/progress_bar_memory_usage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_below="@id/progress_percentage_memory"
+            style="@android:style/Widget.ProgressBar.Horizontal" />
+</RelativeLayout>

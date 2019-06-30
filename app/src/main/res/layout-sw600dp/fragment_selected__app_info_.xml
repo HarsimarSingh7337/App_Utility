@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/_10sdp"
+    android:fillViewport="true"
+    android:paddingBottom="0dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Selected_AppInfo_Fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@android:color/black" />
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="0dp">
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/label_app_size"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/app_size"/>
+                <TextView android:id="@+id/value_app_size"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text=""/>
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/label_app_version"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/app_version"/>
+                <TextView android:id="@+id/value_app_version"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text=""/>
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/label_app_firstInstallTime"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/app_firstInstalled"/>
+                <TextView android:id="@+id/value_app_firstInstallTime"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text=""/>
+            </TableRow>
+
+            <TableRow android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView android:id="@+id/label_app_lastUpdated"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/app_lastUpdated"/>
+                <TextView android:id="@+id/value_app_lastUpdated"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/black"
+                    android:text=""/>
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_show_more"
+            android:text="@string/show_more"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@android:color/black"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/btn_show_more_background"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:paddingStart="@dimen/_35sdp"
+        android:paddingEnd="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingTop="0dp">
+
+        <Button
+            android:id="@+id/btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:drawableEnd="@drawable/ic_menu_share"
+            android:background="@drawable/share_btn_background"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_7sdp"/>
+
+        <Button
+            android:id="@+id/btn_backup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backup"
+            android:drawableEnd="@drawable/ic_backup_black_24dp"
+            android:background="@drawable/backup_btn_background"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_7sdp"/>
+
+        <Button
+            android:id="@+id/btn_uninstall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Uninstall"
+            android:drawableEnd="@drawable/ic_delete_forever_black_24dp"
+            android:background="@drawable/uninstall_btn_background"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_7sdp" />
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

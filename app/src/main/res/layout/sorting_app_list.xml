@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="@dimen/_20sdp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/sort_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:text="Sort Apps"
+        android:textSize="@dimen/_16ssp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/ascending_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/asc_order"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/sort_label"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/ascending_order"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp"/>
+
+    <TextView
+        android:id="@+id/descending_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dsc_order"
+        android:textSize="@dimen/_14ssp"
+        android:layout_below="@id/divider"
+        android:textColor="@android:color/black" />
+
+</RelativeLayout>

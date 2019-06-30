@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_share_24dp"
+        app:showAsAction="always"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        android:title="Search"
+        app:actionViewClass="android.widget.SearchView" />
+
+    <item
+        android:id="@+id/storage"
+        android:orderInCategory="100"
+        android:title="Storage"
+        android:icon="@drawable/ic_sd_storage_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/grid_list_view"
+        android:orderInCategory="100"
+        android:title="Sort"
+        android:icon="@drawable/ic_view_quilt_black_24dp"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sort"
+        android:orderInCategory="100"
+        android:title="Sort"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/features"
+        android:orderInCategory="100"
+        android:title="Feature List"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/backup_location"
+        android:orderInCategory="100"
+        android:title="Backup Location"
+        app:showAsAction="never" />
+
+</menu>

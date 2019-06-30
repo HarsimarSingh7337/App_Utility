@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">App Utility</string>
+    <string name="home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">App Utility</string>
+    <string name="developeremail">harsimarsinghdeol@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_developer">Developer: <b>Harsimar Singh</b></string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+    <string name="querylabel">For any Query/Complaint:</string>
+    <string name="fon">+918196073139</string>
+    <string name="feature_title">Feature List</string>
+    <string name="feature_textline1">Search an app from all the installed apps in device.</string>
+    <string name="feature_textline2">Sort apps in <b>Ascending</b> or <b>Descending</b> order.</string>
+    <string name="feature_textline3">Take a backup of an app before unistalling it.</string>
+    <string name="feature_textline4">Share an app directly via <b>WhatsApp</b>, <b>Bluetooth</b>, <b>Email</b> etc.</string>
+    <string name="feature_textline5">View <b>Storage</b> and <b>Ram</b> usage statistics.</string>
+    <string name="dummy_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="backup">Backup</string>
+    <string name="uninstall">Uninstall</string>
+    <string name="title_activity_bottom__navigation_">Bottom_Navigation_Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="asc_order">Ascending Order (A -> Z)</string>
+    <string name="dsc_order">Descending Order (Z -> A)</string>
+    <string name="app_version">App version: </string>
+    <string name="app_firstInstalled">First Installed: </string>
+    <string name="app_lastUpdated">Last Updated: </string>
+    <string name="app_size">App size: </string>
+    <string name="show_more">Show More</string>
+    <string name="internal_storage"><b>Internal Strorage</b></string>
+    <string name="app_utility"><b>App_Utility</b></string>
+
+</resources>

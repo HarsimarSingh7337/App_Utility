@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="@dimen/_2sdp"
+        card_view:cardMaxElevation="1dp"
+        android:background="@android:color/white"
+        card_view:cardCornerRadius="@dimen/_10sdp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:id="@+id/app_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_7sdp">
+
+            <CheckBox
+                android:id="@+id/app_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:id="@+id/app_icon"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="@dimen/_55sdp"
+                android:layout_toEndOf="@id/app_checkbox"
+                android:scaleType="fitCenter"
+                android:layout_marginStart="@dimen/_10sdp"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@id/app_icon"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/app_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="@android:color/black"
+                android:layout_toEndOf="@id/app_icon"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_below="@id/app_name" />
+
+        </RelativeLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
